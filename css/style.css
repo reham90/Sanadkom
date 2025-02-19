@@ -705,7 +705,116 @@ inset-inline-start: 0;
 .advice-slider{
   position: relative;
 }
+.serv-block{
+  background-color: #F3FBF4;
+}
+.serv-img{
+  transition: 0.5s;
+  object-fit: fill;
+}
+.serv-img-block{
+  height: 181px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.serv-text{
+  padding: 0 20px;
+}
+.serv-title{
+  color: var(--main-hover);
+  text-align: start;
+  margin: 0 0 25px;
+  font-size: 20px;
+  font-family: "NeoSansArabicMedium";
+}
+.serv-paragraph{
+  text-align: start;
+  margin: 0;
+  color: #848484;
+  font-size: 18px;
+  line-height: 26px;
+}
+.service-block:hover .serv-img{
+  transform: scale(1.05);
 
+}
+.contact-divv{
+  display: flex;
+  gap:60px;
+  margin-bottom: 60px;
+}
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  font-size: 18px;
+  font-family: "NeoSansArabicMedium";
+  text-align: start;
+  margin: 0;
+}
+.contact-form{
+  display: flex;
+  align-items: center;
+  box-shadow: 12px 30px 50px 0px #00000026;
+padding: 30px;
+width: 100%;
+gap:30px;
+}
+.form-title{
+  text-align: start;
+  color: var(--main-color);
+  font-size: 32px;
+  font-family: "NeoSansArabicBold";
+  margin: 0 0 50px;
+}
+form{
+  width: 561px;
+}
+.form-input{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border: 0;
+  outline: none;
+  background: linear-gradient(180deg, #028A0F 0%, #66BF6E 100%);
+ color: #fff;
+ font-size: 20px;
+ margin-bottom: 20px;
+}
+.textarea{
+  height: 250px;
+}
+.send-btn{
+  width: 214px;
+  height: 70px;
+  background: linear-gradient(180deg, #028A0F 0%, #66BF6E 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+border: 0;
+outline: none;
+font-size: 20px;
+font-family: "NeoSansArabicBold";
+}
+.send-btn:focus{
+  border: 0;
+  outline: none;
+}
+.form-input::placeholder{
+  color: #fff;
+  font-size: 20px;
+}
+.form-input:focus{
+  border: 0;
+  outline: none;
+}
+.contact-item i{
+  color: var(--main-color);
+  font-size: 45px;
+}
 .advice-slider .swiper-btn {
   position: absolute;
   z-index: 1;
@@ -1478,6 +1587,16 @@ html[dir="rtl"] .footer-accordion.active:after {
     position: relative;
     padding-top: 73px;
   }
+  .contact-form{
+    flex-wrap: wrap;
+  }
+  form {
+    width: 100%;
+}
+.contact-divv{
+  gap:30px;
+  flex-wrap: wrap;
+}
   .inner-banner .main-banner-img {
     min-height: auto;
     height: auto;
