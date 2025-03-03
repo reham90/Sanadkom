@@ -803,8 +803,17 @@ font-family: "NeoSansArabicBold";
   border: 0;
   outline: none;
 }
+.send-btn:hover{
+  color: #fff;
+}
 .form-input::placeholder{
   color: #fff;
+  font-size: 20px;
+}
+.code{
+  color: var(--main-hover);
+  text-align: start;
+  display: block;
   font-size: 20px;
 }
 .form-input:focus{
